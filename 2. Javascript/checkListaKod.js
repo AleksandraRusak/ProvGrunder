@@ -11,19 +11,19 @@ let myNumber = 42;
 let myObject = { key: "value" };
 let myArray = [1, 2, 3];
 
-console.log(myString);
+console.log(myString); // result: Hello, World!
 
 // CRUD-operationer på Variabler
 let myVariable = "Initial value";
-console.log(myVariable);
+console.log(myVariable); // result: Initial value
 
 // Update
 myVariable = "Updated value";
-console.log(myVariable);
+console.log(myVariable); // result: Updated value
 
 // Delete
 myVariable = null;
-console.log(myVariable);
+console.log(myVariable); // result: null
 
 // https://github.com/davidshore/chas_webbutveckling_grundkurs/tree/main/v43-arrayer-objekt
 
@@ -32,28 +32,28 @@ let myObject = { key: "value" };
 
 // Create
 myObject.newKey = "New value";
-console.log(myObject);
+console.log(myObject); // result: { key: "value", newKey: "New value" }
 
 // Read
-console.log(myObject.key);
+console.log(myObject.key); // result: value
 
 // Update
 myObject.key = "Updated value";
-console.log(myObject);
+console.log(myObject); // result: { key: "Updated value", newKey: "New value" }
 
 // Delete
 delete myObject.key;
-console.log(myObject);
+console.log(myObject); // result: { newKey: "New value" }
 
 // Operatorer
 let x = 10;
 let y = 5;
 
 // Matematiska operatorer
-let sum = x + y;
-let difference = x - y;
-let product = x * y;
-let quotient = x / y;
+let sum = x + y; // 10+5= 15
+let difference = x - y; // 10-5=5
+let product = x * y; // 10*5=50
+let quotient = x / y; // 10/5= 2
 
 // Jämförelseoperatorer
 let isEqual = x === y;
@@ -79,38 +79,38 @@ if (condition1 && condition2) {
 let firstName = "John";
 let lastName = "Doe";
 let fullName = firstName + " " + lastName; // Alternativt: `${firstName} ${lastName}`
-console.log(fullName);
+console.log(fullName); // John Doe
 
 let greeting = `Hej, ${firstName}!`;
-console.log(greeting);
+console.log(greeting); // Hej, John!
 
 let substring = fullName.substring(0, 4);
-console.log(substring);
+console.log(substring); // John
 
 let upperCaseName = fullName.toUpperCase();
-console.log(upperCaseName);
+console.log(upperCaseName); // JOHN DOE
 
 for (let i = 0; i < fullName.length; i++) {
   console.log(fullName[i]);
 }
 
 let firstLetter = fullName[0];
-console.log(firstLetter);
+console.log(firstLetter); // J
 
 // Arrayer
 let myArray = [1, 2, 3, 4, 5];
 
 // Create
-myArray.push(6);
+myArray.push(6); // add 6 = [1, 2, 3, 4, 5, 6]
 
 // Read
-console.log(myArray[2]);
+console.log(myArray[2]); // 3
 
 // Update
-myArray[1] = 10;
+myArray[1] = 10; // [1, 10, 3, 4, 5, 6] (andra elementet ändrat till 10)
 
 // Delete
-myArray.pop();
+myArray.pop(); // [1, 10, 3, 4, 5] (sista elementet borttaget)
 
 // Loopa igenom med for-loop
 for (let i = 0; i < myArray.length; i++) {
