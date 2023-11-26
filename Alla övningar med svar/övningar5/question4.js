@@ -14,12 +14,17 @@ const currencies = [
 ];
 
 function convertToUSD(currencyArr) {
-  //Din kod här
+  return currencyArr.map((item) => {
+    return {
+      currency: item.currency,
+      value: Math.round(item.value * exchangeRates[item.currency]),
+    };
+  });
 }
 
 console.log(convertToUSD(currencies));
 /* 
-  ska logga 
+  korekt! ska logga 
   [{ currency: 'EUR', value: 112 },
   { currency: 'GBP', value: 66 },
   { currency: 'JPY', value: 47 }]

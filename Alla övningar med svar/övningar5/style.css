@@ -1,0 +1,32 @@
+
+div {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Desktop-vy: 3 kolumner */
+  @media (min-width: 768px) {
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    div {
+      width: calc(30% - 20px); /* 3 kolumner, justera för margin */
+    }
+  }
+  
+  /* Mobil-vy: 1 kolumn */
+  @media (max-width: 267px) {
+    div {
+      width: 100%;
+    }
+  }
+  
